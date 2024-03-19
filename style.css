@@ -1,0 +1,38 @@
+/* reset browser default values */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* rules for document root */
+:root {
+    --size: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 8px;
+}
+
+/* rules for color square */
+.color {
+    height: var(--size);
+    width: var(--size);
+    border: 2px solid black;
+}
+
+/* rules for control panel */
+.pannel {
+    width: var(--size);
+    display: grid;
+    grid-template-columns: 
+        minmax(calc(var(--size) * 0.2), 2rem)
+        auto
+        minmax(calc(var(--size) * 0.2), 2rem)
+    ;
+    gap: 8px;
+    padding: 1rem 0;
+}
+
+.monitor {
+    text-align: right;
+    padding: 0 2px;
+}
